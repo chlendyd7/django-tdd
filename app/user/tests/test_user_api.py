@@ -60,4 +60,4 @@ class PublicUserApiTests(TestCase):
         user_exists = get_user_model().objects.filter(
             email=payload['email']
         ).exists()
-        self.assertEqual(user_exists)
+        self.assertFalse(user_exists)
