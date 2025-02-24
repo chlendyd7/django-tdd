@@ -11,7 +11,7 @@ from rest_framework.test import APIClient
 
 from core.models import Recipe
 
-from recipe.serializer import RecipeSerializer
+from recipe.serializers import RecipeSerializer
 
 RECIPES_URL = reverse('recipe:recipe-list')
 
